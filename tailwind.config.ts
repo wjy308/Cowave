@@ -11,8 +11,12 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        fontFamily: {
+          sans: "Pretendard, sans-serif", // Pretendard를 기본 sans로 설정
+        },
       },
     },
   },
-  plugins: [],
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  plugins: [require("tailwind-scrollbar-hide")],
 } satisfies Config;
