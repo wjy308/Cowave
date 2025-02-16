@@ -1,5 +1,5 @@
 import { NextApiRequest, NextApiResponse } from "next";
-import { getWeatherData } from "../lib/api/getWeatherData";
+import { getWeatherData } from "../../lib/api/getWeatherData";
 
 export default async function handler(
   req: NextApiRequest,

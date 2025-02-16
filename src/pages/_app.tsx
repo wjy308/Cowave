@@ -1,8 +1,8 @@
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
 import { useEffect, useState } from "react";
-import getCurrentLocation from "./lib/utils/getCurrentLocation";
-import { TimeProvider } from "./context/timeContext";
+import getCurrentLocation from "../lib/utils/getCurrentLocation";
+import { TimeProvider } from "@/context/timeContext";
 
 //baseTime과 Date를 보다 효율적으로 활용하기 위해 전역으로 관리하고자 시도
 export default function App({ Component, pageProps }: AppProps) {

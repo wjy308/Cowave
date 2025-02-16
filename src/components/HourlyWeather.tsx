@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
-import { getLocalTime } from "../lib/api/getLocalTime";
-import getCurrentLocation from "../lib/utils/getCurrentLocation";
+import { getLocalTime } from "@/lib/api/getLocalTime";
+import getCurrentLocation from "@/lib/utils/getCurrentLocation";
 
 interface ForecastData {
   time: string;

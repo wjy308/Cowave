@@ -1,5 +1,5 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
-import { getLocalTime } from "../lib/api/getLocalTime";
+import { getLocalTime } from "@/lib/api/getLocalTime";
 
 interface TimeContextType {
   currentTime: string | null;

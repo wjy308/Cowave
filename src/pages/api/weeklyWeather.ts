@@ -1,4 +1,4 @@
-import { getWeeklyWeatherData } from "../lib/api/getWeatherData";
+import { getWeeklyWeatherData } from "../../lib/api/getWeatherData";
 import { NextApiRequest, NextApiResponse } from "next";
 
 export default async function handler(

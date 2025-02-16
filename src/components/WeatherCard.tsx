@@ -1,14 +1,14 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
-import getCurrentLocation from "../lib/utils/getCurrentLocation";
-import latLonToGrid from "../lib/utils/latLonToGrid";
-import { getBaseDateAndTime } from "../lib/utils/time";
+import getCurrentLocation from "@/lib/utils/getCurrentLocation";
+import latLonToGrid from "@/lib/utils/latLonToGrid";
+import { getBaseDateAndTime } from "@/lib/utils/time";
 import HourlyWeather from "./HourlyWeather";
-import getWindDirectionIcon from "../lib/utils/getWindDirectionIcon";
+import getWindDirectionIcon from "@/lib/utils/getWindDirectionIcon";
 import WeeklyWeather from "./WeeklyWeather";
-import getAddressFromCoords from "../api/getAddressFromCoords";
-import { useTime } from "../context/timeContext";
-import { getLocalTimeWithDate } from "../lib/api/getLocalTimeWithDate";
+import getAddressFromCoords from "@/pages/api/getAddressFromCoords";
+import { useTime } from "@/context/timeContext";
+import { getLocalTimeWithDate } from "@/lib/api/getLocalTimeWithDate";
 import Link from "next/link";
 
 declare global {
