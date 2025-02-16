@@ -1,9 +1,8 @@
 import axios from "axios";
 import { KAKAO_KEY } from "../lib/constants";
 
-/**
- * 좌표를 입력받아 행정동 주소를 반환하는 함수
- */
+// 좌표를 입력받아 행정동 주소를 반환하는 함수
+// 기상청에서 행정동 데이터를 따로 제공해주지 않지 때문에 카카오 맵으로 국내 행정동 데이터 불러옴
 interface RegionData {
   address_name: string;
   code: string;

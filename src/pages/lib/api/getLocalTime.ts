@@ -1,5 +1,7 @@
 import { GOOGLE_MAP_KEY } from "../constants";
 
+// TimeZone 조건을 위한 접속한 사용자의 좌표 값 기준 시간 확인
+// 구글 맵 api 활용
 export const getLocalTime = async (latitude: number, longitude: number) => {
   try {
     // Google Timezone API 호출

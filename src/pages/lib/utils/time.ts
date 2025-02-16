@@ -1,5 +1,10 @@
 import { getLocalTimeWithDate } from "../api/getLocalTimeWithDate";
-
+/*
+기상청 데이터는 02, 05, 08, 11, 14, 17, 20, 23 시 기준으로 데이터를 갱신
+데이터를 갱신하는 시간의 데이터는 이전 시간의 요청에서 확인할 수 있음
+ex) 2025년 02월 17일 02시 데이터는 16일 23시 데이터에서 확인 가능
+이런 경우를 위한 baseTime, baseDate 조정 함수들
+*/
 export async function getBaseTime(): Promise<string> {
   try {
     const { time } = await getLocalTimeWithDate(); // 현지 시간 가져오기

@@ -1,3 +1,4 @@
+// 기상청 api 호출을 위한 nx, ny값 변환 함수
 export default function latLonToGrid(latitude: number, longitude: number) {
   const RE = 6371.00877; // 지구 반경(km)
   const GRID = 5.0; // 격자 간격(km)
